@@ -1,8 +1,10 @@
 import { X } from "phosphor-react";
 import React from "react";
 import ModalForm from "./ModalForm";
+import { useNavigate } from "react-router-dom";
 
 const Modal = ({ showModal, handleModal }) => {
+  const navigate = useNavigate();
   return (
     <>
       <section
