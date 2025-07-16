@@ -13,7 +13,16 @@ const Modal = ({ showModal, handleModal }) => {
       >
         <main className="lg:w-1/2 md:w-3/4 w-11/12  h-auto bg-gray-100 rounded-lg py-6 px-6">
           <div className="flex justify-end items-center text-gray-900">
-            <span onClick={handleModal} className="cursor-pointer">
+            <span 
+              onClick={() => { 
+                console.log('X button clicked'); 
+                handleModal(); 
+              }} 
+              className="cursor-pointer" 
+              role="button" 
+              tabIndex={0} 
+              onKeyPress={e => { if (e.key === 'Enter' || e.key === ' ') { handleModal(); } }}
+            >
               <X size={25} color="currentColor" />
             </span>
           </div>
