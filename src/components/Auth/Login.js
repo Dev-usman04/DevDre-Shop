@@ -37,8 +37,8 @@ const Login = () => {
           transition={{ delay: 0.3, type: "spring", stiffness: 120 }}
         >
           <Link to="/">
-            <h1 className="text-gray-100 tracking-widest uppercase font-sans font-bold text-xl">
-              Corta
+            <h1 className="text-gray-100 tracking-widest font-sans font-bold text-xl">
+              DevDre
               <span className="text-blue-700 text- tracking-tighter font-extrabold">
                 shop
               </span>
